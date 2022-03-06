@@ -29,3 +29,8 @@ body {
 span{
     color: white;
 }
+
+.calculator {
+    position: relative;
+    display: grid;
+}
