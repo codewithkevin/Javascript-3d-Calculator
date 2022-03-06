@@ -95,3 +95,13 @@ body {
 .calculator span:active{
     filter: brightness(1.5);
 }
+
+.calculator .clear {
+    grid-column: span 2;
+    width: 170px;
+    background-color: #f00;
+}
+
+.calculator .clear::before{
+    background: linear-gradient(90deg, #d20000, #ffffff5c);
+}
