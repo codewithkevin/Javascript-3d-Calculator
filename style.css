@@ -28,22 +28,38 @@ body {
 
 
 .calculator span{
-    color: white;
     position: relative;
     display: grid;
     width: 80px;
     height: 80px;
     background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
-    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.25),
     inset 0 -8px 8px rgba(0, 0, 0, 0.25),
     0 0 0 2px rgba(0, 0, 0, 75),
     10px 20px 25px rgba(0, 0, 0, 0.4);
     margin: 8px;
+    color: white;
     user-select: none;
     cursor: pointer;
     font-weight: 400;
     place-items: center;
     border-radius: 10px;
+}
+
+
+.calculator .value {
+    position: relative;
+    grid-column: span 4;
+    height: 100px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #a7af7c;
+    margin-bottom: 10px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
+    text-align: right;
+    padding: 10px;
+    font-size: 2em;
 }
 
 
@@ -77,21 +93,6 @@ body {
 }
 
 
-.calculator .value {
-    position: relative;
-    grid-column: span 4;
-    height: 100px;
-    width: 100%;
-    border: none;
-    outline: none;
-    background-color: #a7af7c;
-    margin-bottom: 10px;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
-    text-align: right;
-    padding: 10px;
-    font-size: 2em;
-}
-
 .calculator span:active{
     filter: brightness(1.5);
 }
@@ -99,9 +100,29 @@ body {
 .calculator .clear {
     grid-column: span 2;
     width: 170px;
-    background-color: #f00;
+    background-color: red;
 }
 
 .calculator .clear::before{
     background: linear-gradient(90deg, #d20000, #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+}
+
+.calculator .plus {
+    grid-row: span 2;
+    height: 170px;
+    background-color: dodgerblue;
+}
+
+.calculator .equal{
+    background: dodgerblue;
+}
+
+.calculator .equal::before{
+    background: linear-gradient(90deg, #d20000, #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
 }
