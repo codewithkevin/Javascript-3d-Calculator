@@ -26,11 +26,33 @@ body {
     inset 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-span{
+.calculator span{
     color: white;
+    position: relative;
+    display: grid;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15);
 }
+
 
 .calculator {
     position: relative;
     display: grid;
+}
+
+.calculator .value {
+    position: relative;
+    grid-column: span 4;
+    height: 100px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #a7af7c;
+    margin-bottom: 10px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
+    text-align: right;
+    padding: 10px;
+    font-size: 2em;
 }
