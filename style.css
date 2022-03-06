@@ -26,6 +26,7 @@ body {
     inset 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
+
 .calculator span{
     color: white;
     position: relative;
@@ -45,17 +46,6 @@ body {
     border-radius: 10px;
 }
 
-.calculator span::before{
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 4px;
-    right: 12px;
-    background: linear-gradient(90deg, #2d2d2d, #4d4d4d);
-    border-radius: 10px;
-    box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.1),
-    10px 5px 10px rgba(]0, 0, 0, rgba(0, 0, 0, 0.15));
-}
 
 .calculator span i {
     position: relative;
@@ -70,6 +60,23 @@ body {
     display: grid;
 }
 
+
+.calculator span::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    right: 12px;
+    background: linear-gradient(90deg, #2d2d2d, #4d4d4d);
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.1),
+    10px 5px 10px rgba(0, 0, 0, 0.15);
+    border-left: 1px solid #0004;
+    border-top: 1px solid #0000;
+    border-bottom: 1px solid #0004;
+}
+
+
 .calculator .value {
     position: relative;
     grid-column: span 4;
@@ -83,4 +90,8 @@ body {
     text-align: right;
     padding: 10px;
     font-size: 2em;
+}
+
+.calculator span:active{
+    filter: brightness(1.5);
 }
