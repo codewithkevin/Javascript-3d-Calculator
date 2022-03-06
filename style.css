@@ -92,8 +92,8 @@ body {
     box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.1),
     10px 5px 10px rgba(0, 0, 0, 0.15);
     border-left: 1px solid #0004;
-    border-top: 1px solid #0000;
-    border-bottom: 1px solid #0004;
+    border-top: 1px solid #0004;
+    border-bottom: 1px solid #0009;
 }
 
 
@@ -104,7 +104,7 @@ body {
 .calculator .clear {
     grid-column: span 2;
     width: 170px;
-    background-color: red;
+    background-color: #f00;
 }
 
 .calculator .clear::before{
@@ -117,7 +117,6 @@ body {
 .calculator .plus {
     grid-row: span 2;
     height: 170px;
-    background-color: dodgerblue;
 }
 
 .calculator .equal{
