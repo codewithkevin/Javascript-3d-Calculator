@@ -1,0 +1,14 @@
+{
+  "name": "3d-calculator",
+  "version": "1.0.0",
+  "description": "3d Calculator with Javascript ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Calculator"
+  ],
+  "author": "Kevin Black",
+  "license": "ISC"
+}
