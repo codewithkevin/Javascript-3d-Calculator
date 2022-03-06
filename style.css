@@ -33,7 +33,25 @@ body {
     width: 80px;
     height: 80px;
     background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
-    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+    0 0 0 2px rgba(0, 0, 0, 75),
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+    margin: 8px;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.calculator span::before{
+    
+}
+
+.calculator span i {
+    position: relative;
+    font-style: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 
